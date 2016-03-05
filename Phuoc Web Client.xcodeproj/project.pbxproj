@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		98E0E8D81C8B9A2400F2237F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E0E8D71C8B9A2400F2237F /* AppDelegate.swift */; };
-		98E0E8DA1C8B9A2400F2237F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E0E8D91C8B9A2400F2237F /* ViewController.swift */; };
+		98E0E8DA1C8B9A2400F2237F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E0E8D91C8B9A2400F2237F /* LoginViewController.swift */; };
 		98E0E8DD1C8B9A2400F2237F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E0E8DB1C8B9A2400F2237F /* Main.storyboard */; };
 		98E0E8DF1C8B9A2400F2237F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98E0E8DE1C8B9A2400F2237F /* Assets.xcassets */; };
 		98E0E8E21C8B9A2400F2237F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E0E8E01C8B9A2400F2237F /* LaunchScreen.storyboard */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		98E0E8D41C8B9A2400F2237F /* Phuoc Web Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phuoc Web Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E0E8D71C8B9A2400F2237F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		98E0E8D91C8B9A2400F2237F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		98E0E8D91C8B9A2400F2237F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		98E0E8DC1C8B9A2400F2237F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98E0E8DE1C8B9A2400F2237F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98E0E8E11C8B9A2400F2237F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				98E0E8D71C8B9A2400F2237F /* AppDelegate.swift */,
-				98E0E8D91C8B9A2400F2237F /* ViewController.swift */,
+				98E0E8D91C8B9A2400F2237F /* LoginViewController.swift */,
 				98E0E8DB1C8B9A2400F2237F /* Main.storyboard */,
 				98E0E8DE1C8B9A2400F2237F /* Assets.xcassets */,
 				98E0E8E01C8B9A2400F2237F /* LaunchScreen.storyboard */,
@@ -136,7 +136,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98E0E8DA1C8B9A2400F2237F /* ViewController.swift in Sources */,
+				98E0E8DA1C8B9A2400F2237F /* LoginViewController.swift in Sources */,
 				98E0E8D81C8B9A2400F2237F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -251,6 +251,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Phuoc Web Client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ttp.Phuoc-Web-Client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -262,6 +263,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Phuoc Web Client/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ttp.Phuoc-Web-Client";
 				PRODUCT_NAME = "$(TARGET_NAME)";
