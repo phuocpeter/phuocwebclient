@@ -35,7 +35,7 @@
                         <sections>
                             <tableViewSection headerTitle="Host" footerTitle="Enter the server address" id="wEv-22-HSO">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="VJa-JZ-FhF">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="VJa-JZ-FhF">
                                         <rect key="frame" x="0.0" y="114" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VJa-JZ-FhF" id="OgW-Jj-yf0">
@@ -46,6 +46,9 @@
                                                     <rect key="frame" x="8" y="7" width="584" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="numbersAndPunctuation" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                                    <connections>
+                                                        <action selector="serverDone:" destination="yrP-cK-ETL" eventType="editingDidEndOnExit" id="CXg-bh-Pak"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -60,7 +63,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="User" id="nQx-ZW-DYD">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="adv-Gz-f23">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="adv-Gz-f23">
                                         <rect key="frame" x="0.0" y="225" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="adv-Gz-f23" id="fer-BI-48B">
@@ -71,6 +74,9 @@
                                                     <rect key="frame" x="8" y="7" width="584" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" returnKeyType="next" enablesReturnKeyAutomatically="YES"/>
+                                                    <connections>
+                                                        <action selector="usernameDone:" destination="yrP-cK-ETL" eventType="editingDidEndOnExit" id="HvF-oR-uY4"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -81,7 +87,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Qu3-Gc-eMK">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" id="Qu3-Gc-eMK">
                                         <rect key="frame" x="0.0" y="269" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Qu3-Gc-eMK" id="mT0-SZ-WcH">
@@ -92,6 +98,9 @@
                                                     <rect key="frame" x="8" y="7" width="584" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardAppearance="alert" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
+                                                    <connections>
+                                                        <action selector="passwordDone:" destination="yrP-cK-ETL" eventType="editingDidEndOnExit" id="xc0-94-Kdg"/>
+                                                    </connections>
                                                 </textField>
                                             </subviews>
                                             <constraints>
@@ -116,6 +125,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="je7-uy-6s1">
                                                     <rect key="frame" x="8" y="7" width="584" height="30"/>
                                                     <state key="normal" title="Log In"/>
+                                                    <connections>
+                                                        <action selector="login" destination="yrP-cK-ETL" eventType="touchUpInside" id="LWD-5d-Im3"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -153,6 +165,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Log In" id="o6j-L7-hjA"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="tZb-hv-hxO" id="zmE-Ns-b2x"/>
+                        <outlet property="serverTextField" destination="Yyf-Fg-lIs" id="dYI-20-48M"/>
+                        <outlet property="usernameTextField" destination="yLn-s5-oyV" id="DPZ-SG-fa8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MG5-ey-UUy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
