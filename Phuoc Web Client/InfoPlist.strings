@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  Phuoc Web Client
+
+  Created by Tran Thai Phuoc on 2016-03-07.
+  Copyright © 2016 Tran Thai Phuoc. All rights reserved.
+*/
+"CFBundleName" = "Phuoc Server";
