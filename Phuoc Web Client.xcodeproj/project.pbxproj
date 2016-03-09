@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		98135DD11C8E648200045754 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98135DD01C8E648200045754 /* InfoPlist.strings */; };
 		984CAA221C8F90B900E9EEA3 /* RegsiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984CAA211C8F90B900E9EEA3 /* RegsiterViewController.swift */; };
+		984CAA241C8FAC2000E9EEA3 /* SwiftNotice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984CAA231C8FAC2000E9EEA3 /* SwiftNotice.swift */; };
 		98E0E8D81C8B9A2400F2237F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E0E8D71C8B9A2400F2237F /* AppDelegate.swift */; };
 		98E0E8DA1C8B9A2400F2237F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E0E8D91C8B9A2400F2237F /* LoginViewController.swift */; };
 		98E0E8DD1C8B9A2400F2237F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E0E8DB1C8B9A2400F2237F /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 /* Begin PBXFileReference section */
 		98135DD01C8E648200045754 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
 		984CAA211C8F90B900E9EEA3 /* RegsiterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegsiterViewController.swift; sourceTree = "<group>"; };
+		984CAA231C8FAC2000E9EEA3 /* SwiftNotice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftNotice.swift; sourceTree = "<group>"; };
 		98E0E8D41C8B9A2400F2237F /* Phuoc Web Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phuoc Web Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E0E8D71C8B9A2400F2237F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98E0E8D91C8B9A2400F2237F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				98E0E8D71C8B9A2400F2237F /* AppDelegate.swift */,
 				98E0E8D91C8B9A2400F2237F /* LoginViewController.swift */,
 				984CAA211C8F90B900E9EEA3 /* RegsiterViewController.swift */,
+				984CAA231C8FAC2000E9EEA3 /* SwiftNotice.swift */,
 				98E0E8DB1C8B9A2400F2237F /* Main.storyboard */,
 				98E0E8DE1C8B9A2400F2237F /* Assets.xcassets */,
 				98E0E8E01C8B9A2400F2237F /* LaunchScreen.storyboard */,
@@ -147,6 +150,7 @@
 				984CAA221C8F90B900E9EEA3 /* RegsiterViewController.swift in Sources */,
 				98E0E8DA1C8B9A2400F2237F /* LoginViewController.swift in Sources */,
 				98E0E8D81C8B9A2400F2237F /* AppDelegate.swift in Sources */,
+				984CAA241C8FAC2000E9EEA3 /* SwiftNotice.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

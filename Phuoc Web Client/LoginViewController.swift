@@ -36,6 +36,7 @@ class LoginViewController: UITableViewController {
                 displayAlert("Error", message: "Missing required field")
             } else {
                 postToServer()
+                self.pleaseWait()
             }
         }
     }
@@ -68,6 +69,7 @@ class LoginViewController: UITableViewController {
             if error != nil {
                 // Error occurred
                 print(error)
+                SwiftNotice.clear()
             }
             if let ddata = data {
                 // Check if the host is connectable
@@ -80,16 +82,20 @@ class LoginViewController: UITableViewController {
                         let message = parseJSON["message"] as? String
                         dispatch_async(dispatch_get_main_queue(), {
                             // Display alert from main thread
+                            SwiftNotice.clear()
                             self.displayAlert(status!, message: message!)
                         })
                     }
                 } catch let jsonErr as NSError {
                     // Error parsing json
                     print(jsonErr)
+                    SwiftNotice.clear()
                 }
             } else {
-                print("Failed to connect to host")
-                self.displayAlert("Error", message: "Failed to connect to host")
+                dispatch_async(dispatch_get_main_queue(), {
+                    SwiftNotice.clear()
+                    self.displayAlert("Error", message: "Failed to connect to host")
+                })
             }
         }
         task.resume()

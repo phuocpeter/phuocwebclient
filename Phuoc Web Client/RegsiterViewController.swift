@@ -92,6 +92,7 @@ class RegsiterViewController: UITableViewController {
             data, response, error in
             if error != nil {
                 print(error)
+                SwiftNotice.clear()
             }
             if let ddata = data {
                 do {
@@ -101,15 +102,18 @@ class RegsiterViewController: UITableViewController {
                         let status = parseJSON["status"] as! String
                         let message = parseJSON["message"] as! String
                         dispatch_async(dispatch_get_main_queue(), {
+                            SwiftNotice.clear()
                             self.displayAlert(status, message: message)
                         })
                     }
                 } catch let jsonErr as NSError {
                     print(jsonErr)
+                    SwiftNotice.clear()
                 }
             } else {
                 // Cannot connect nor receive data
                 dispatch_async(dispatch_get_main_queue(), {
+                    SwiftNotice.clear()
                     self.displayAlert("Error", message: "Failed to connect to host")
                 })
             }
