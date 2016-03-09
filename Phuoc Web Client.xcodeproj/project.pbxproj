@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		98135DD11C8E648200045754 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 98135DD01C8E648200045754 /* InfoPlist.strings */; };
+		984CAA221C8F90B900E9EEA3 /* RegsiterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 984CAA211C8F90B900E9EEA3 /* RegsiterViewController.swift */; };
 		98E0E8D81C8B9A2400F2237F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E0E8D71C8B9A2400F2237F /* AppDelegate.swift */; };
 		98E0E8DA1C8B9A2400F2237F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98E0E8D91C8B9A2400F2237F /* LoginViewController.swift */; };
 		98E0E8DD1C8B9A2400F2237F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98E0E8DB1C8B9A2400F2237F /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		98135DD01C8E648200045754 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		984CAA211C8F90B900E9EEA3 /* RegsiterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegsiterViewController.swift; sourceTree = "<group>"; };
 		98E0E8D41C8B9A2400F2237F /* Phuoc Web Client.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Phuoc Web Client.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98E0E8D71C8B9A2400F2237F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		98E0E8D91C8B9A2400F2237F /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -41,7 +43,6 @@
 			isa = PBXGroup;
 			children = (
 				98E0E8D61C8B9A2400F2237F /* Phuoc Web Client */,
-				98E0E8D51C8B9A2400F2237F /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +52,7 @@
 				98E0E8D41C8B9A2400F2237F /* Phuoc Web Client.app */,
 			);
 			name = Products;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		98E0E8D61C8B9A2400F2237F /* Phuoc Web Client */ = {
@@ -58,11 +60,13 @@
 			children = (
 				98E0E8D71C8B9A2400F2237F /* AppDelegate.swift */,
 				98E0E8D91C8B9A2400F2237F /* LoginViewController.swift */,
+				984CAA211C8F90B900E9EEA3 /* RegsiterViewController.swift */,
 				98E0E8DB1C8B9A2400F2237F /* Main.storyboard */,
 				98E0E8DE1C8B9A2400F2237F /* Assets.xcassets */,
 				98E0E8E01C8B9A2400F2237F /* LaunchScreen.storyboard */,
 				98E0E8E31C8B9A2400F2237F /* Info.plist */,
 				98135DD01C8E648200045754 /* InfoPlist.strings */,
+				98E0E8D51C8B9A2400F2237F /* Products */,
 			);
 			path = "Phuoc Web Client";
 			sourceTree = "<group>";
@@ -140,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				984CAA221C8F90B900E9EEA3 /* RegsiterViewController.swift in Sources */,
 				98E0E8DA1C8B9A2400F2237F /* LoginViewController.swift in Sources */,
 				98E0E8D81C8B9A2400F2237F /* AppDelegate.swift in Sources */,
 			);
